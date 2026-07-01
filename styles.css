@@ -319,6 +319,41 @@ figcaption {
   color: var(--muted);
 }
 
+.amenities {
+  background: var(--white);
+}
+
+.amenity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.amenity-grid div {
+  min-height: 150px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.amenity-grid strong,
+.amenity-grid span {
+  display: block;
+}
+
+.amenity-grid strong {
+  color: var(--green);
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.amenity-grid span {
+  margin-top: 12px;
+  color: var(--muted);
+}
+
 .comparison {
   background: var(--white);
 }
@@ -401,6 +436,7 @@ figcaption {
   .two-column,
   .feature-grid,
   .guide-grid,
+  .amenity-grid,
   .booking {
     grid-template-columns: 1fr;
   }
