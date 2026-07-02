@@ -441,10 +441,11 @@ figcaption {
   color: var(--white);
 }
 
-.booking h2 {
-  max-width: 980px;
-  font-size: clamp(42px, 6.6vw, 76px);
-  line-height: 1.08;
+.booking-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 116px;
+  gap: clamp(22px, 5vw, 72px);
+  align-items: start;
 }
 
 .booking p {
@@ -459,7 +460,7 @@ figcaption {
 }
 
 .contact-panel {
-  margin-top: 54px;
+  margin-top: 42px;
 }
 
 .contact-methods {
@@ -486,9 +487,9 @@ figcaption {
 
 .wechat-card {
   display: inline-block;
-  max-width: 180px;
-  margin-top: 34px;
-  padding: 8px;
+  width: 116px;
+  margin: 4px 0 0;
+  padding: 6px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.94);
   color: var(--ink);
@@ -582,12 +583,17 @@ figcaption {
     margin-top: 28px;
   }
 
+  .booking-copy {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
   .contact-methods {
     grid-template-columns: 1fr;
   }
 
   .wechat-card {
-    max-width: 180px;
+    width: 104px;
   }
 }
 
