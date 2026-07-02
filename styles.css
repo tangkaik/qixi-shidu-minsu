@@ -399,16 +399,22 @@ figcaption {
 }
 
 .booking {
-  display: flex;
-  justify-content: space-between;
-  gap: 28px;
-  align-items: center;
+  display: block;
   background: var(--green-dark);
   color: var(--white);
 }
 
+.booking h2 {
+  max-width: 980px;
+  font-size: clamp(42px, 6.6vw, 76px);
+  line-height: 1.08;
+}
+
 .booking p {
+  max-width: 1120px;
   color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(18px, 2.1vw, 25px);
+  font-weight: 700;
 }
 
 .booking .eyebrow {
@@ -416,36 +422,35 @@ figcaption {
 }
 
 .contact-panel {
-  display: grid;
-  grid-template-columns: minmax(300px, 1fr) 148px;
-  gap: 18px;
-  align-items: center;
-  min-width: min(620px, 100%);
+  margin-top: 54px;
 }
 
 .contact-methods {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 4vw, 56px);
   margin-top: 0;
 }
 
-.contact-methods .primary {
-  grid-column: 1 / -1;
+.button.contact-outline {
+  min-height: 92px;
+  border: 6px solid #ff454d;
+  border-radius: 4px;
+  background: transparent;
+  color: #ff585e;
+  font-size: clamp(18px, 2.2vw, 28px);
+  letter-spacing: 0;
 }
 
-.button.contact-button {
-  border-color: rgba(255, 255, 255, 0.22);
-  background: rgba(255, 255, 255, 0.94);
-  color: var(--green-dark);
-}
-
-.button.contact-button:hover,
-.button.primary:hover {
+.button.contact-outline:hover {
+  background: rgba(255, 69, 77, 0.1);
   transform: translateY(-1px);
 }
 
 .wechat-card {
+  display: inline-block;
+  max-width: 180px;
+  margin-top: 34px;
   padding: 10px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.94);
@@ -536,16 +541,11 @@ figcaption {
   }
 
   .contact-panel {
-    grid-template-columns: 1fr;
     margin-top: 28px;
   }
 
   .contact-methods {
     grid-template-columns: 1fr;
-  }
-
-  .contact-methods .primary {
-    grid-column: auto;
   }
 
   .wechat-card {
