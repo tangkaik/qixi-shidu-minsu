@@ -8,4 +8,16 @@
     <loc>https://qixi.homes/llms.txt</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://qixi.homes/first-time-shidu-stay.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://qixi.homes/shidu-family-2days.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://qixi.homes/qixi-vs-nongjiayuan.html</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
