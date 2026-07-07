@@ -587,6 +587,75 @@ figcaption {
   font-size: 18px;
 }
 
+.article-highlight {
+  display: grid;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 20px;
+  border-left: 4px solid var(--sun);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.article-highlight strong {
+  color: var(--green);
+  font-size: 18px;
+}
+
+.article-highlight span {
+  color: var(--muted);
+}
+
+.info-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.info-list div {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.info-list strong,
+.info-list span {
+  display: block;
+}
+
+.info-list strong {
+  color: var(--green);
+  font-size: 18px;
+}
+
+.info-list span {
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.faq-section details {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.faq-section details + details {
+  margin-top: 12px;
+}
+
+.faq-section summary {
+  cursor: pointer;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.faq-section details p {
+  margin-bottom: 0;
+}
+
 .article-image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -719,6 +788,10 @@ figcaption {
 
   .quick-facts,
   .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-list {
     grid-template-columns: 1fr;
   }
 
