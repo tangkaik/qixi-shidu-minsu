@@ -24,4 +24,16 @@
     <loc>https://qixi.homes/shidu-nearby-attractions.html</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://qixi.homes/shidu-summer-vacation-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://qixi.homes/shidu-summer-kids.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://qixi.homes/shidu-summer.html</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
