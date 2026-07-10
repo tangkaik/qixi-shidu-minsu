@@ -36,4 +36,16 @@
     <loc>https://qixi.homes/shidu-summer.html</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://qixi.homes/shidu-drifting-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://qixi.homes/shidu-kids-water-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://qixi.homes/shidu-two-days-easy-route.html</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
